@@ -1,5 +1,6 @@
 <template>
   <HeaderMain/>
+  hello
 </template>
 
 <script>
