@@ -15,14 +15,39 @@
     </svg>
     <span>|</span>
     <img src="https://crmm.ru/wp-content/uploads/2022/08/crmm-logo.png" data-src="https://crmm.ru/wp-content/uploads/2022/08/crmm-logo.png" alt="ЦРММ">
+    <button-main
+        :title="'Кнопка 1'"
+        class="btn btn-1"
+
+    />
+    <button-main
+        :title="'Кнопка 2'"
+        class="btn btn-2"
+
+    />
+    <button-main
+        :title="'Кнопка 3'"
+        class="btn btn-3"
+
+    />
   </header>
 </template>
 
 <script>
+import ButtonMain from "@/components/UI/ButtonMain.vue";
 export default {
     name: 'HeaderMain',
+    components: {ButtonMain},
     props: {
         
+    },
+    data() {
+        return {
+
+        }
+    },
+    methods: {
+
     }
 }
 
@@ -34,6 +59,7 @@ header {
     flex-direction: row;
     align-items: center;
     gap: 20px;
+    border-bottom: 2px solid black;
 }
 img {
     margin-top: 8px;  
@@ -41,4 +67,8 @@ img {
 span {
     font-size: 64px;
 }
+.btn-1, .btn-2, .btn-3 {
+  margin: 0 auto;
+}
+
 </style>
