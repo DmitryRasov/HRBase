@@ -1,26 +1,16 @@
 <template>
-  <HeaderMain/>
-  <div>
-    <input-main v-model="title"></input-main>
-    {{ title }}
-  </div>
+  <router-view>
+
+  </router-view>
 </template>
 
 <script>
-import HeaderMain from './components/HeaderMain.vue'
-import InputMain from "@/components/UI/InputMain.vue";
+
 
 export default {
   name: 'App',
-  components: {
-    InputMain,
-    HeaderMain,
-  },
-  data(){
-    return {
-      title: ''
-    }
-  },
+
+
 
   methods: {
 
